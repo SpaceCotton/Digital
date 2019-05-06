@@ -1,0 +1,46 @@
+
+
+<div *ngFor="let testcase of testcases"  class="col-md-4 col-sm-4 col-lg-4">
+    <div class="thumbnail">
+        <!-- <img src="http://placehold.it/320x40">        -->
+        <div class="caption">
+                <!-- <div class="body bg-cyan"> -->
+                        <div class="m-b--35 font-bold">
+                                    <h4>机器号：{{machineDataTokenShortCodeActGrpRot.MachineId}}</h4>
+                        </div>
+                        <ul class="dashboard-stat-list">
+                            <li>
+                                 接头可靠性/PR%:  13
+                                <span class="pull-right">
+                                <i class="material-icons">trending_up</i>
+                                </span>
+                            </li>
+                            <li>
+                                断纱/1000Rh:  4
+                                <span class="pull-right">
+                                    <i class="material-icons">trending_up</i>
+                                </span>
+                            </li>
+                            <li>
+                                红灯处理平均时间:  2
+                                <span class="pull-right">
+                                    <i class="material-icons">trending_up</i>
+                                </span>
+                            </li>
+                            <li>
+                                纱线检测 / 1000Rh:  12
+                                <!-- {{testcase.Description}} -->
+                                <span class="pull-right">
+                                    <i class="material-icons">trending_up</i>
+                                </span>
+                            </li>
+                        </ul>
+                    <!-- </div> -->
+            <!-- <h4 class="pull-right">{{testcase.AssignedPerson}}</h4> -->
+            <h4><a>停锭数：{{machineDataTokenShortCodeActGrpRot.nYB}}</a></h4>
+            <h4><a>效率：{{machineDataTokenShortCodeActGrpRot.Shift}}</a></h4>
+            <button>详细</button><button>上一组</button><button>下一组</button>
+
+        </div>
+    </div>
+</div>

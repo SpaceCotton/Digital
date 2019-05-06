@@ -1,0 +1,29 @@
+﻿<div class="login-box">
+    <div class="logo">
+        <a href="javascript:void(0);">利泰醒狮</a>
+    </div>
+
+    <div *ngIf="showTenantChange()" class="tenant-change-box">
+        <!-- <tenant-change></tenant-change> //屏蔽租户-->
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <!-- <account-languages></account-languages> //屏蔽多语言 -->
+
+    <div class="row">
+        <div class="col-xs-12 text-center" style="color: #e9e9e9">
+            <small>&copy; {{currentYear}} LitaiDigitalTextileCloudCenter. <b>Version </b> {{versionText}}</small>
+        </div>
+        <div class="col-xs-12 text-center" style="color: #e9e9e9">
+            <small>&copy; {{currentYear}} 金昇|华鸢|利泰.上海软件研发中心</small>
+        </div>
+        <div class="col-xs-12 text-center" style="color: #e9e9e9">
+                <small>
+                        <img src="assets/images/jinshenLogo.png" width="28" height="24" alt="JinshenLogo" />&nbsp;&nbsp;
+                        <img src="assets/images/huayuanLogo.png" width="24" height="26" alt="HuaYuanLogo" />
+                        <img src="assets/images/litaiLogo.png" width="65" height="40" alt="LitaiLogo" />
+                </small>
+        </div>
+    </div>  
+</div>

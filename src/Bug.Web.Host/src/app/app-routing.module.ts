@@ -9,7 +9,7 @@ import { TenantsComponent } from './tenants/tenants.component';
 import { RolesComponent } from 'app/roles/roles.component';
 import { BaiduComponent } from '@app/baidu/baidu.component';
 import { TestcasesComponent } from '@app/testcases/testcases.component';
-
+import { MachineDataTokenShortCodeActGrpRotComponent } from '@app/machine/machine.component';
 @NgModule({
     imports: [
         RouterModule.forChild([
@@ -24,6 +24,7 @@ import { TestcasesComponent } from '@app/testcases/testcases.component';
                     { path: 'about', component: AboutComponent },
                     { path: 'baidu', component: BaiduComponent },
                     { path: 'testcases', component: TestcasesComponent },
+                    { path: 'machine', component: MachineDataTokenShortCodeActGrpRotComponent },
                 ]
             }
         ])

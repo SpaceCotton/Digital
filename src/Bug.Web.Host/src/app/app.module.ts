@@ -34,8 +34,9 @@ import { SideBarFooterComponent } from '@app/layout/sidebar-footer.component';
 import { RightSideBarComponent } from '@app/layout/right-sidebar.component';
 import { BaiduComponent } from '@app/baidu/baidu.component';
 import { TestcasesComponent } from '@app/testcases/testcases.component';
-// import { MachineDataTokenShortCodeActGrpRotComponent } from '@app/machine/machine.component';
 import { TestcaseService } from '@app/shared/testcase.service';
+import { MachineDataTokenShortCodeActGrpRotComponent } from '@app/machine/machine.component';
+import { MachineDataTokenShortCodeActGrpRotService } from '@app/shared/machine.service';
 
 @NgModule({
     declarations: [
@@ -59,6 +60,7 @@ import { TestcaseService } from '@app/shared/testcase.service';
         RightSideBarComponent,
         BaiduComponent,
         TestcasesComponent,
+        MachineDataTokenShortCodeActGrpRotComponent,
 
     ],
     imports: [
@@ -73,10 +75,10 @@ import { TestcaseService } from '@app/shared/testcase.service';
         SharedModule,
         NgxPaginationModule
     ],
-    // TestcaseService提供器
+    // Service提供器
     providers: [
         TestcaseService,
-
+        MachineDataTokenShortCodeActGrpRotService,
     ]
 })
 export class AppModule { }
